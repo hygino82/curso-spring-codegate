@@ -24,6 +24,9 @@ public class Emprego {
     @Size(min = 10)
     private String descricao;
 
+    public Emprego() {
+    }
+
     public Long getId() {
         return id;
     }
