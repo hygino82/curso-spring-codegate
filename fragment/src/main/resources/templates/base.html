@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="https://www.thymeleaf.org">
+<head th:fragment="headCust">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device=width, initial-scale1"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <style>
+    body{
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    </style>
+</head>
+
+<body>
+<div th:fragment="navlinks">
+
+    <ul class="nav justify-content-center" >
+        <li class="nav-item">
+            <a class="nav-link active" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/contact">Contato</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Login</a>
+        </li>
+    </ul>
+
+</div>
+<div th:fragment="footer" style="margin-top: 5px">
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Curso Java Spring Boot</h5>
+            <p class="card-text">
+                Visita a nossa escola digital em
+                <a href="www.codegate01.com">www.codegate01.com</a>
+            </p>
+
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

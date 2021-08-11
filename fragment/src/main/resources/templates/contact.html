@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="https://www.thymeleaf.org">
+<head th:replace="base :: headCust">
+    <title>Contact</title>
+</head>
+<body>
+
+<div th:replace="base :: navlinks"></div>
+
+<div class="container">
+    <div class="alert alert-primary" role="alert">
+        <h2>Entre em contato</h2>
+    </div>
+    <form>
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="code@codegate01.com">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Serviços</label>
+            <select class="form-control" id="exampleFormControlSelect1">
+                <option>Sugestões</option>
+                <option>Dúvidas</option>
+                <option>Reclamações</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextArea1"> Comentário</label>
+            <textarea class="form-control" id="exampleFormControlTextArea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</div>
+
+
+<div th:replace="base :: footer"></div>
+
+</body>
+</html>
